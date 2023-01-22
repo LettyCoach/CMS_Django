@@ -28,6 +28,6 @@ class NewListView(ListView):
     template_name = 'news/list.html'
 
 
-class NewDitailView(DetailView):
-    model = New
-    template_name = 'news/detail.html'
+# class NewDitailView(DetailView):
+#     model = New
+#     template_name = 'news/detail.html'
