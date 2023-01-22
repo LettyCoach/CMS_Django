@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <h2>{{ object.title }}</h2>
+    <p>{{ object.body }}</p>
+</div>
+
+<h2>Comments</h2>
+{% for obj in comments %}
+<h4>{{obj.created_at}}</h4>
+<p>{{obj.body}}</p>
+{% endfor %}
+{% endblock %}
