@@ -19,7 +19,10 @@ from django.urls import include, path
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', include('pages.urls')),
+    # path(r'^$', include('pages.urls')),
+    # path('admin/', admin.site.urls),
+    # path('news/', include('news.urls')),
+    path(r'', include('pages.urls')),
     path('admin/', admin.site.urls),
     path('news/', include('news.urls')),
 

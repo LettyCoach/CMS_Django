@@ -22,7 +22,6 @@
         <div class="d-flex justify-content-between px-5 mx-auto" style="width: 90%;">
             <span class="navbar-text text-white">DJANGO CMS</span>
             <ul class="navbar-nav mr-auto">
-                <a class="nav-link active" href="/">Home</a>
                 {% for page in pages %}
                 <li class="nav-item active">
                     <a class="nav-link active" href="/{{page.slug}}">{{page.title}}{{ page.get_absolute_url }}</a>
@@ -39,6 +38,7 @@
     </nav>
 
     {{detail}}
+   
 
     <div class="container-fluid mt-5" style="max-width: 80%">    
         {% block content %}

@@ -2,12 +2,12 @@
 
 {% block content %}
 <div>
-    <h2>{{ object.title }}</h2>
-    <p>{{ object.body }}</p>
+    <h2>{{ object.new.title }}</h2>
+    <p>{{ object.new.body }}</p>
 </div>
 
 <h2>Comments</h2>
-{% for obj in comments %}
+{% for obj in object.comments %}
 <h4>{{obj.created_at}}</h4>
 <p>{{obj.body}}</p>
 {% endfor %}

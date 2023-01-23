@@ -20,8 +20,8 @@ class Page(models.Model):
             self.slug = slugify(self.title)
         return super().save(*args, **kwargs)
 
+
 class Comment(models.Model):
-    # lang = models.CharField('')
     languageChoices = (
         ('en', 'English'),
         ('de', 'Germen'),
@@ -34,5 +34,7 @@ class Comment(models.Model):
     )
     body = models.TextField()
     created_at = models.DateTimeField(null=True, auto_now_add=True)
-    new = models.ForeignKey(New, on_delete=models.CASCADE, related_name='nComments')
-    page = models.ForeignKey(Page, on_delete=models.CASCADE, related_name='pComments', null=True)
+    new = models.ForeignKey(New, on_delete=models.CASCADE,
+                            related_name='nComments', blank=True, null=True)
+    page = models.ForeignKey(Page, on_delete=models.CASCADE,
+                             related_name='pComments', blank=True, null=True)

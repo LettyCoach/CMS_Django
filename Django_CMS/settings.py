@@ -60,9 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'Django_CMS.translate_middleware.TranslateMiddleware',
-    'Django_CMS.pages_middleware.get_pages_middleware',
-    'Django_CMS.translate_middleware.site_locale_middleware',
+    'Django_CMS.pages_middleware.PageListMiddleware',
 ]
 
 ROOT_URLCONF = 'Django_CMS.urls'
