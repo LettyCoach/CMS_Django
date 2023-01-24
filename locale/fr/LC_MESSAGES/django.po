@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-24 20:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\Django_CMS\settings.py:137
+msgid "Germen"
+msgstr "Allemands"
+
+#: .\Django_CMS\settings.py:138
+msgid "English"
+msgstr "Anglais"
+
+#: .\Django_CMS\settings.py:139
+msgid "French"
+msgstr "Français"
+
+#: .\templates\base.html:37 .\templates\base.html:49
+#: .\templates\news\list.html:5
+msgid "News"
+msgstr "Nouvelles"
+
+#: .\templates\base.html:38 .\templates\base.html:52
+msgid "Admin"
+msgstr "Administrateur"
+
+#: .\templates\news\detail.html:10 .\templates\pages\detail.html:10
+msgid "Comments"
+msgstr "commentaires"
+
+#: .\templates\pages\list.html:5
+msgid "Welcome to HomePage"
+msgstr "Bienvenue sur la page d'accueil"
+
+#: .\templates\pages\list.html:0
+msgid "Main"
+msgstr "Principal"
+
+#: .\templates\pages\list.html:0
+msgid "Contact"
+msgstr "Contacter"
+
+#: .\templates\pages\list.html:0
+msgid "About"
+msgstr "À propos de"
+
+#: .\templates\pages\list.html:0
+msgid "Pages"
+msgstr "pages"
+
+#: .\templates\pages\list.html:0
+msgid "This is main page."
+msgstr "Ceci est la page principale."
+
+#: .\templates\pages\list.html:0
+msgid "This is contact page. phone number : 1234567890, mail : admin@gmail.com"
+msgstr "Ceci est la page de contact. numéro de téléphone : 1234567890 mail : admin@gmail.com"
+
+#: .\templates\pages\list.html:0
+msgid "This is About Page"
+msgstr "Ceci est la page À propos"
+
+#: .\templates\pages\list.html:0
+msgid "Homepage construction"
+msgstr "Construction de la page d'accueil"
+
+#: .\templates\pages\list.html:0
+msgid "Today's news!"
+msgstr "Les nouvelles d'aujourd'hui!"
+
+#: .\templates\pages\list.html:0
+msgid "This is content of First news"
+msgstr "Ceci est le contenu de First news"
+
+#: .\templates\pages\list.html:0
+msgid 
+"Today is a good day!"
+"\n"
+"So many people were walking, talking and laughing!"
+msgstr "Aujourd'hui est un bon jour!Tant de gens marchaient, parlaient et riaient!"
+
+#: .\templates\pages\list.html:0
+msgid "This is French comment."
+msgstr "C'est un commentaire français."
+
+#: .\templates\pages\list.html:0
+msgid "This is Germen comment."
+msgstr "C'est un commentaire de Germen."
+
+#: .\templates\pages\list.html:0
+msgid "This is first comment."
+msgstr "Ceci est le premier commentaire."
+
+#: .\templates\pages\list.html:0
+msgid "This is second comment."
+msgstr "C'est le deuxième commentaire."

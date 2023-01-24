@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block content %}
-<h1>News</h1>
+<h1>{% trans "News" %}</h1>
 
 {% for obj in object_list %}
 <ul>
-  <li><a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a></li>
+  <li><a href="{{ obj.get_absolute_url }}">{% trans obj.title %}</a></li>
 </ul>
 {% endfor %}
 

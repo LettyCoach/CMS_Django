@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -61,6 +62,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'Django_CMS.pages_middleware.PageListMiddleware',
+    'Django_CMS.translate_middleware.TranslateMiddleware'
 ]
 
 ROOT_URLCONF = 'Django_CMS.urls'
@@ -121,9 +123,27 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = False
+USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
+
+LANGUAGES = (
+    ('de', _('Germen')),
+    ('en', _('English')),
+    ('fr', _('French')),
+)
+
+# MULTILINGUAL_LANGUAGES = (
+#     "en",
+#     "fr",
+#     "de"
+# )
 
 
 # Static files (CSS, JavaScript, Images)

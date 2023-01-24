@@ -1,3 +1,4 @@
+# from translations.models import Translatable
 from django.db import models
 from django.template.defaultfilters import slugify
 from django.urls import reverse
@@ -25,7 +26,7 @@ class Comment(models.Model):
     languageChoices = (
         ('en', 'English'),
         ('de', 'Germen'),
-        ('fr', 'Franc')
+        ('fr', 'French')
     )
     lang = models.CharField(
         max_length=2,

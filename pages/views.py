@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from django.views.generic import ListView
 from .models import Page
 from django.views.generic.base import TemplateView
 from django.urls import reverse
 from django.utils import translation
+from django.template import loader
 
 
 def dispatch_view(request, slug):
@@ -28,16 +30,9 @@ class PageDetailView(TemplateView):
         lang = domain[0:2]
         page = Page.objects.get(slug=slug)
         comments = page.pComments.filter(lang=lang).values
-        # context = {
-        #     'object': {
-        #         'page': page,
-        #         'comments': comments
-        #     }
-        # }
         context = super(PageDetailView, self).get_context_data(*args, **kwargs)
         context['object'] = {
             'page': page,
             'comments': comments
         }
-        translation.activate('fr')
         return context
