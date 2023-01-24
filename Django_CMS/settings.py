@@ -45,11 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'commons.apps.CommonsConfig',
     'news.apps.NewsConfig',
     'pages.apps.PagesConfig',
-    # 'news.apps.NewsConfig',
-    # 'comments.app.CommentsConfig',
 ]
 
 MIDDLEWARE = [
@@ -139,11 +136,6 @@ LANGUAGES = (
     ('fr', _('French')),
 )
 
-# MULTILINGUAL_LANGUAGES = (
-#     "en",
-#     "fr",
-#     "de"
-# )
 
 
 # Static files (CSS, JavaScript, Images)
